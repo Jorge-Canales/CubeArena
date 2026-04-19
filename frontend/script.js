@@ -1,4 +1,8 @@
 // frontend/script.js
+// Mostrar usuario actual
+const usuario = localStorage.getItem('cubearena_usuario') || 'Anonimo';
+document.getElementById('usuarioActual').textContent = usuario;
+
 let mediaRecorder;
 let chunks = [];
 

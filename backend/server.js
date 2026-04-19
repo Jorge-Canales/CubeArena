@@ -15,6 +15,11 @@ if (!fs.existsSync('uploads')) {
 // Configuración simple de multer (sin renombrar aún)
 const upload = multer({ dest: 'uploads/' });
 
+// Ruta principal - muestra login.html
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'frontend', 'login.html'));
+});
+
 // Servir archivos del frontend
 app.use(express.static(path.join(__dirname, '..', 'frontend')));
 
