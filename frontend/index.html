@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CubeArena - Speedcubing DB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CubeArena - Grabar miniclip</h1>
+    
+    <div>
+        <input type="text" id="nombreInput" placeholder="Tu nombre" value="Jugador1">
+        <input type="number" id="tiempoInput" placeholder="Tiempo en segundos" step="0.01" value="15.2">
+    </div>
+    
+    <video id="preview" autoplay muted width="400"></video>
+    
+    <div>
+        <button id="btnGrabar">🎥 Comenzar grabación</button>
+        <button id="btnParar" disabled>⏹️ Parar</button>
+    </div>
+    
+    <div id="resultado">
+        <h3>Último video grabado:</h3>
+        <video id="videoReciente" controls width="400"></video>
+    </div>
+    
+    <div id="mensajeExito"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
